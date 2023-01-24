@@ -1,8 +1,8 @@
 package exceptions;
 
 public class IncorrectArgumentException extends Exception {
-    private String argument;
-    private String message;
+    private final String argument;
+    private final String message;
 
     public IncorrectArgumentException(String message, String argument) {
         super(message);

@@ -1,12 +1,12 @@
-package task;
+package tasks;
 
 import exceptions.IncorrectArgumentException;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-public class OneTimeTask extends Task {
-    public OneTimeTask(String title, Type type, LocalDateTime dateTime, String description) throws IncorrectArgumentException {
+public class YearlyTask extends Task {
+    public YearlyTask(String title, Type type, LocalDateTime dateTime, String description) throws IncorrectArgumentException {
         super(title, type, dateTime, description);
     }
 
