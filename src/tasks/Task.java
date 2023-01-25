@@ -68,7 +68,25 @@ public abstract class Task {
 
     @Override
     public String toString() {
-        return super.toString();
+        String taskType = new String();
+
+        switch (type) {
+            case WORK:
+                taskType = "рабочая";
+                break;
+            case PERSONAL:
+                taskType = "личная";
+                break;
+            default:
+                taskType = "тип не определен";
+        }
+
+        return "Задача:" +
+                "ИДЕНТИФИКАТОР: " + id + "\n" +
+                "ТИП: " + taskType + "\n" +
+                "НАЗВАНИЕ: " + title + "\n" +
+                "ОПИСАНИЕ: " + description + "\n" +
+                "ДАТА И ВРЕМЯ: " + dateTime;
     }
 
     public Task(String title, Type type, LocalDateTime dateTime, String description)
