@@ -62,7 +62,6 @@ public abstract class Task {
             return false;
         }
 
-
         return this.id == ((Task) obj).id;
     }
 
@@ -81,12 +80,11 @@ public abstract class Task {
                 taskType = "тип не определен";
         }
 
-        return "Задача:" +
-                "ИДЕНТИФИКАТОР: " + id + "\n" +
-                "ТИП: " + taskType + "\n" +
-                "НАЗВАНИЕ: " + title + "\n" +
-                "ОПИСАНИЕ: " + description + "\n" +
-                "ДАТА И ВРЕМЯ: " + dateTime;
+        return "ИД.: " + id +
+                " ТИП: " + taskType + "\n" +
+                "НАЗВАНИЕ: " + title +
+                " ОПИСАНИЕ: " + description/* + "\n" +
+                "ДАТА И ВРЕМЯ: " + dateTime*/;
     }
 
     public Task(String title, Type type, LocalDateTime dateTime, String description)

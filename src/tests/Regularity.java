@@ -6,4 +6,4 @@ public enum Regularity {
     WEEKLY,
     MONTHLY,
     YEARLY
-}
+} //

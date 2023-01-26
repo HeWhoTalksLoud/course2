@@ -30,6 +30,4 @@ public class IncorrectArgumentException extends Exception {
     public String toString() {
         return message + "\nАргумент: " + argument;
     }
-
-
 }
