@@ -16,4 +16,4 @@ public class WeeklyTask extends Task {
         return !date.isBefore(getDateTime().toLocalDate())
                 && getDateTime().getDayOfWeek().equals(date.getDayOfWeek());
     }
-}
+} //

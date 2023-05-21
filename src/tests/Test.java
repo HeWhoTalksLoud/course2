@@ -9,9 +9,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.TemporalAdjusters;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -83,7 +81,7 @@ public class Test {
 
         do {
             System.out.printf("%1$td.%1$tm.%1$ty, %1$tA %n", d);
-            ts.getAllByDate(d).forEach(task -> System.out.println(task.getId()));
+            ts.getAllByDate(d).forEach(System.out::println);
             System.out.println();
             d = d.plusDays(1);
         } while (!d.getDayOfWeek().equals(DayOfWeek.MONDAY));

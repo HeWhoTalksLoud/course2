@@ -30,4 +30,4 @@ public class YearlyTask extends Task {
         return (getDateTime().toLocalDate().getMonthValue() == date.getMonthValue()
             && getDateTime().toLocalDate().getDayOfMonth() == dateDayOfMonth);
     }
-}
+} //
